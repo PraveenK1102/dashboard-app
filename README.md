@@ -1,5 +1,10 @@
 # Dashboard App (React + TypeScript + Vite)
 
+Deployed Link: https://preeminent-snickerdoodle-5bde25.netlify.app/
+
+## For Mobile response
+- This project was not supported for mobile and tablet view responses.
+
 A clean, modern dashboard built with React, TypeScript, Tailwind CSS, and Vite. The code is written with readable names and minimal abstractions, so anyone can understand it quickly. Dark mode is first-class, and loading feels realistic.
 
 ## Quick Start
@@ -76,5 +81,3 @@ src/
 ## Challenges faced
 - Geographic map: plotted real data points as map markers with correct lat/long; tuning projection/scale and visual balance of the markers was the most challenging part.
 
-## For Mobile response
-- This project was not supported for mobile and tablet views.
