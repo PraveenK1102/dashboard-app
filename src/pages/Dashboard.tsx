@@ -45,7 +45,8 @@ const Dashboard: React.FC = () => {
     };
   }, []);
   return (
-    <div className="p-6">
+    <div className="p-6 space-y-6">
+      <h1 className="text-14 font-bold text-black-100 dark:text-white">eCommerce</h1>
       <div className="grid gap-6 h-full">
         <div className="flex gap-7 h-[252px]">
           <div className="flex-[1] h-full">

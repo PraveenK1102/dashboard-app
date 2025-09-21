@@ -20,7 +20,7 @@ const RevenueChart: React.FC = () => {
       className="dark:border-white-10 rounded-lg p-6 h-full bg-white dark:bg-black dark:bg-opacity-[0.7]  "
       style={{ backgroundColor: isDark ? 'rgba(255,255,255,0.05)' : '#F7F9FB' }}
     >
-      <div className="flex items-center mb-4">
+      <div className="flex items-center">
         <span className="text-14 text-black dark:text-white font-semibold border-r pr-4">Revenue</span>
         <div className="ml-6 flex items-center gap-7">
           <div className="flex items-center gap-2">

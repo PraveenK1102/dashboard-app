@@ -63,7 +63,18 @@ src/
 - Search logic: Simple, readable, and fast. Converts combined fields to lowercase and perform a search.
 
 ## Changes from the provided Figma design
-- In the bar chart (Projections vs Actuals), we show two bars side by side so each is clearly visible, even when the lighter-colour bar has a smaller value.
+- Projections vs Actuals: bars are rendered separately (side‑by‑side) for each month to improve clarity when values are close.
+- Added a Delete action and multi‑select on Orders (was not in the original design).
+- Introduced search by username, date, and status in addition to the primary search.
+- Pagination UX: previous/next buttons only appear when another page actually exists.
+
+## Design decisions and improvements
+- Prefer clarity over cleverness: split responsibilities across small components; avoid unnecessary abstractions.
+- Dark mode as a first‑class experience: all icons/styles rely on `currentColor` so themes remain consistent.
+- Charts are lazy‑loaded with shared skeletons to keep first paint smooth and coherent.
+
+## Challenges faced
+- Geographic map: plotted real data points as map markers with correct lat/long; tuning projection/scale and visual balance of the markers was the most challenging part.
 
 ## For Mobile response
-- This project was not supported for mobile and tablet views completely till now, working in progress.
+- This project was not supported for mobile and tablet views.
