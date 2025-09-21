@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Inter', Helvetica, sans-serif;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(28, 28, 28, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(28, 28, 28, 0.4);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@layer components {
+  .input-shell {
+    @apply flex items-center gap-2 px-3 py-1 bg-white dark:bg-white-5 rounded-lg border border-black-10 dark:border-white-10;
+  }
+  .input-text {
+    @apply bg-transparent text-sm text-black-100 dark:text-white placeholder-black-20 dark:placeholder-white-20 outline-none;
+  }
+  .icon-muted {
+    @apply text-black-40 dark:text-white-40;
+  }
+  .btn-icon {
+    @apply p-1 rounded hover:bg-black-5 dark:hover:bg-white-5 transition-colors;
+  }
+  .checkbox-accent {
+    @apply w-4 h-4 bg-transparent hover:bg-transparent dark:hover:bg-transparent accent-[#1C1C1C] dark:accent-[#C6C7F8] border border-black-20 dark:border-white-20 outline-none ring-0 focus:ring-0;
+  }
+}
