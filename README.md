@@ -64,3 +64,6 @@ src/
 
 ## Changes from the provided Figma design
 - In the bar chart (Projections vs Actuals), we show two bars side by side so each is clearly visible, even when the lighter-colour bar has a smaller value.
+
+## For Mobile response
+- This project was not supported for mobile and tablet views completely till now, working in progress.
